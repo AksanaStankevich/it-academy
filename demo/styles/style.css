@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 0,05 );
+    grid-template-rows: repeat(2);
+    grid-gap: 3px;        
+}
+
+.section-title {
+  grid-column-start: 1;
+  grid-column-end: 20;
+}
+
+.topmenu-item-first {
+    grid-column: 3 / 5;
+}
+
+.topmenu-item-second {
+    grid-column: 3 / 5;
+}
+.topmenu-item-third {
+    grid-column-start: 6;
+}
+.topmenu-item-fourth {
+    grid-column-start: 7;
+}

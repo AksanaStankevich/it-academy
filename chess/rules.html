@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <header>
+        <figure class="left-figure"><img src="Images/header.png" alt="all kinds of chess figures" height="150px"
+                width="520px"> </figure>
+        <figure class="right-figure"><img src="Images/header.png" alt="all kinds of chess figures" height="150px"
+                width="520px"> </figure>
+        <nav class="menu">
+            <ul class="menu-ul">
+                <li class="menu-li"> <a href="index.html"> <img src="Images/home_page.png" alt="Icon at home" width="20"
+                            height="20"> Home</a></li>
+                <li class="menu-li"> <a href="history.html"> <img src="Images/history.png" alt="Icon history" width="20"
+                            height="20"> History</a></li>
+                <li class="menu-li"><a href="rules.html"> <img src="Images/rules.png" alt="Icon rules" width="20"
+                            height="20"> Rules</a></li>
+                <li class="menu-li"><a href="blog.html"> <img src="Images/blog.png" alt="Icon blog" width="20"
+                            height="20"> Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Rules</h1>
+            <p>The rules of chess are published by <abbr title="фр. Federation Internationale des Echecs">FIDE</abbr>,
+                chess's international governing body, in its Handbook.Rules published by national governing bodies, or
+                by unaffiliated chess organizations, commercial publishers, etc., may differ.
+                <abbr title="фр. Federation Internationale des Echecs">FIDE's</abbr>
+                rules were most recently revised in 2018. Chess pieces are divided into white and black sets. While the
+                sets may not be literally white and black (e.g. the light set may be a yellowish or off-white color,
+                the dark set may be red), they are always referred to as white and black. Each set consists of 16
+                pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The pieces are set
+                out as shown in the diagram and photo. The players of the sets are referred to as White and Black,
+                respectively. The game is played on a square board of eight rows (called ranks, denoted 1 to 8 from
+                bottom to top according to White's perspective) and eight columns (called files, denoted a to h from
+                left to right according to White's perspective). The 64 squares alternate in color and are referred to
+                as light and dark squares. The chessboard is placed with a light square at the right-hand corner nearest
+                to each player. Thus, each queen starts on a square of its own color (the white queen on a light square;
+                the black queen on a dark square).
+            </p>
+            <p>
+                In competitive games, the colors are allocated by the organizers; in informal games, the colors are
+                usually decided randomly, for example by a coin toss, or by one player concealing a white pawn in one
+                hand and a black pawn in the other, and having the opponent choose. White moves first, after which
+                players alternate turns, moving one piece per turn (except for castling, when two pieces are moved). A
+                piece is moved to either an unoccupied square or one occupied by an opponent's piece, which is captured
+                and removed from play. With the sole exception of en passant, all pieces capture by moving to the square
+                that the opponent's piece occupies. Moving is compulsory; it is illegal to skip a turn, even when having
+                to move is detrimental. A player may not make any move that would put or leave the player's own king in
+                check. If the player to move has no legal move, the game is over; the result is either checkmate (a loss
+                for the player with no legal move) if the king is in check, or stalemate (a draw) if the king is not.
+            </p>
+            <ul>Each piece has its own way of moving. In the diagrams, the dots mark the squares to which the piece can
+                move if there are no intervening piece(s) of either color (except the knight, which leaps over any
+                intervening pieces):
+                <li>The king moves one square in any direction. The king also has a special move called castling that
+                    involves also moving a rook.</li>
+                <li>A rook can move any number of squares along a rank or file, but cannot leap over other pieces. Along
+                    with the king, a rook is involved during the king's castling move.</li>
+                <li>A bishop can move any number of squares diagonally, but cannot leap over other pieces.</li>
+                <li>A queen combines the power of a rook and bishop and can move any number of squares along a rank,
+                    file, or diagonal, but cannot leap over other pieces.</li>
+                <li>A knight moves to any of the closest squares that are not on the same rank, file, or diagonal. (Thus
+                    the move forms an "L"-shape: two squares vertically and one square horizontally, or two squares
+                    horizontally and one square vertically.) The knight is the only piece that can leap over other
+                    pieces.</li>
+                <li>A pawn can move forward to the unoccupied square immediately in front of it on the same file, or on
+                    its first move it can advance two squares along the same file, provided both squares are unoccupied
+                    (white dots in the diagram); or the pawn can capture an opponent's piece on a square diagonally in
+                    front of it on an adjacent file, by moving to that square (black "x"s). A pawn has two special
+                    moves: the en passant capture and promotion:</li>
+            </ul>
+            <figure>
+                <img src="Images/king_moves.gif" width="295" height="295" alt="Moves of the king">
+                <img src="Images/rock_moves.jpg" width="295" height="295" alt="Moves of a rock">
+                <img src="Images/bishop_moves.jpg" width="295" height="295" alt="Moves of a bishop">
+                <img src="Images/queen_moves.jpg" width="295" height="295" alt="Moves of the queen">
+                <img src="Images/knight_moves.gif" width="295" height="295" alt="Moves of a knight">
+                <img src="Images/pawn_moves.jpg" width="295" height="295" alt="Moves of a pawn">
+            </figure>
+        </section>
+        <section>
+            <h2>Castling</h2>
+            <ul>Once in every game, each king can make a special move, known as castling. Castling consists of moving
+                the king two squares along the first rank toward a rook on the player's first rank, and then placing the
+                rook on the last square that the king crossed. Castling is permissible if the following conditions are
+                met:
+                <li>Neither the king nor the rook has previously moved during the game.</li>
+                <li>There are no pieces between the king and the rook.</li>
+                <li>The king is not in check, and will not pass through or land on any square attacked by an enemy
+                    piece.
+                    (Note that castling is permitted if the rook is under attack, or if the rook crosses an attacked
+                    square.)</li>
+            </ul>
+            <figure><iframe style="margin-left: 830px;" width="250" height="250"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/55/ChessCastlingMovie_en.svg"></iframe>
+                <figcaption style="margin-left: 830px;">Castling</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>En passant</h2>
+            <p>When a pawn makes a two-step advance from its starting position and there is an opponent's pawn on a
+                square next to the destination square on an adjacent file, then the opponent's pawn can capture it en
+                passant ("in passing"), moving to the square the pawn passed over. This can be done only on the very
+                next turn; otherwise, the right to do so is forfeited. For example, in the animated diagram, the black
+                pawn advances two steps from g7 to g5, and the white pawn on f5 can take it en passant on g6 (but only
+                on White's next move).</p>
+            <h2>Promotion</h2>
+            <p>When a pawn advances to the eighth rank, as a part of the move it is promoted and must be exchanged for
+                the player's choice of queen, rook, bishop, or knight of the same color. Usually, the pawn is chosen to
+                be promoted to a queen, but in some cases, another piece is chosen; this is called underpromotion. In
+                the animated diagram, the pawn on c7 can be advanced to the eighth rank and be promoted. There is no
+                restriction on the piece promoted to, so it is possible to have more pieces of the same type than at the
+                start of the game (e.g., two or more queens).</p>
+            <figure><iframe style="margin-left: 850px;" width="220" height="220"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif"></iframe>
+                <figcaption style="margin-left: 830px;">En passant and Promotion</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Check and checkmate</h2>
+            <p>When a king is under immediate attack by one or two of the opponent's pieces, it is said to be in check.
+                A move in response to a check is legal only if it results in a position where the king is no longer in
+                check. This can involve capturing the checking piece; interposing a piece between the checking piece and
+                the king (which is possible only if the attacking piece is a queen, rook, or bishop and there is a
+                square between it and the king); or moving the king to a square where it is not under attack. Castling
+                is not a permissible response to a check. The object of the game is to checkmate the opponent; this
+                occurs when the opponent's king is in check, and there is no legal way to remove it from attack. It is
+                never legal for a player to make a move that puts or leaves the player's own king in check. In casual
+                games, it is common to announce "check" when putting the opponent's king in check, but this is not
+                required by the rules of chess and is not usually done in tournaments.</p>
+            <figure><img src="Images/checkmate1.png" width="295" height="295" alt="checkmate by 2 rocks"> <img
+                    src="Images/checkmate2.jpg" width="295" height="295" alt="checkmate by 2 bishops"><img
+                    src="Images/checkmate.png" width="295" height="295" alt="children's checkmate"><img
+                    src="Images/checkmate3.jpg" width="295" height="295" alt="checkmate by 2 knights"><img
+                    src="Images/checkmate4.png" width="295" height="295" alt="checkmate by queen and rock"> <img
+                    src="Images/checkmate5.jpg" width="295" height="295" alt="checkmate by a pawn">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <nav class="menu">
+            <ul class="menu-ul">
+                <li class="menu-li"> <a href="index.html"> <img src="Images/home_page.png" alt="Icon at home" width="20"
+                            height="20"> Home</a></li>
+                <li class="menu-li"> <a href="history.html"> <img src="Images/history.png" alt="Icon history" width="20"
+                            height="20"> History</a></li>
+                <li class="menu-li"><a href="rules.html"> <img src="Images/rules.png" alt="Icon rules" width="20"
+                            height="20"> Rules</a></li>
+                <li class="menu-li"><a href="blog.html"> <img src="Images/blog.png" alt="Icon blog" width="20"
+                            height="20"> Blog</a></li>
+            </ul>
+        </nav>
+        <p>© This page is not registered as a copyright object, but please don't steal it.</p>
+    </footer>
+</body>
+
+</html>

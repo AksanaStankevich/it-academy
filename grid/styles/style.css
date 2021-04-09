@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+.row::before,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-xs,
+.col-sm,
+.col-md,
+.col-xxl {
+  width: 100%;
+}
+
+.title {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: grey;
+  color: white;
+}
+
+.section-title {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+    .one {
+      width: 100%;
+    }
+  
+    .col-xs {
+      width: 7%;
+    }
+  
+    .col-sm {
+      width: 12%;
+    }
+
+    .col-md {
+        width: 15%;
+    }
+    .col-xxl {
+        width: 85%;
+    }
+
+.content {
+  width: 75%;
+}
+
+.topmenu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+    padding: 15px;
+    background-color: #777;
+    overflow: hidden;
+}
+
+.topmenu ul{
+  float: left;
+  list-style-type: none;
+}
+
+.topmenu li a {
+   color: white;
+  text-decoration: none;
+}
+
+.topmenu li a:hover {
+  background-color: #222;
+}
+
+.topmenu li a.active {
+  color: white;
+  background-color: #4caf50;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  margin-bottom: 4px;
+  display: block;
+  padding: 0px;
+  background-color: #eee;
+  color: #666;
+  text-decoration: none;
+  height: 50px;
+  text-align: center;
+}
+
+.menu li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.menu li a.active {
+  background-color: #008cba;
+  color: white;
+}
+
+.overflow-demo {
+  background-color: #eee;
+}
+
