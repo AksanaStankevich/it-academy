@@ -13,7 +13,9 @@ body {
 .light-container2,
 .light-container3,
 .light-container4,
-.light-container5 {
+.light-container5,
+.light-container6,
+.light-container7 {
   display: flex;
   width: 100%;
   padding: 100px 0px;
@@ -22,21 +24,26 @@ body {
 .flex-header,
 .light-container1,
 .light-container3,
-.light-container5 {
+.light-container5,
+.light-container7 {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: no-wrap;
 }
 
 .light-container2,
-.light-container4 {
+.light-container4,
+.light-container6 {
   justify-content: space-evenly;
   flex-direction: row-reverse;
   flex-wrap: no-wrap;
 }
 
 .main-header img {
+  display: inline;
   margin-right: 15px;
+  width: 42px;
+  height: 42px;
 }
 
 .main-header h1 {
@@ -60,7 +67,8 @@ body {
 
 .light-container1 img,
 .light-container3 img,
-.light-container5 img {
+.light-container5 img,
+{
   margin-left: -200px;
 }
 
@@ -69,12 +77,26 @@ body {
 .light-container2 img,
 .light-container3 img,
 .light-container4 img,
-.light-container5 img {
+.light-container5 img,
+.code1,
+.code2 {
   border-style: solid;
   border-width: 0px;
   border-color: white;
   border-radius: 10px;
   box-shadow: 0 13px 27px -5px;
+  transition: 0.5s;
+}
+
+.header-picture img:hover,
+.light-container1 img:hover,
+.light-container2 img:hover,
+.light-container3 img:hover,
+.light-container4 img:hover,
+.light-container5 img:hover,
+.code1:hover,
+.code2:hover {
+  transform: scale(1.1);
 }
 
 .dark-container {
@@ -87,7 +109,9 @@ body {
 .light-container2-content,
 .light-container3-content,
 .light-container4-content,
-.light-container5-content {
+.light-container5-content,
+.light-container6-content,
+.light-container7-content {
   flex-direction: column;
 }
 
@@ -104,12 +128,26 @@ body {
   white-space: pre-wrap;
 }
 
+.code1,
+.code2 {
+  white-space: pre-wrap;
+  font-size: 14px;
+  font-family: "Liberation Mono", "Courier New", monospace;
+  width: 600px;
+  text-align: left;
+  height: min-content;
+  padding: 1em;
+  margin: 2em;
+}
+
 .dark-container p,
 .light-container1-content p,
 .light-container2-content p,
 .light-container3-content p,
 .light-container4-content p,
-.light-container5-content p {
+.light-container5-content p,
+.light-container6-content p,
+.light-container7-content p {
   font-size: 17px;
   line-height: 1.6em;
   width: 600px;
@@ -136,14 +174,23 @@ body {
 .light-container2-content a,
 .light-container3-content a,
 .light-container4-content a,
-.light-container5-content a {
+.light-container5-content a,
+.light-container6-content a,
+.light-container7-content a {
   display: inline;
   padding-left: 10px;
   padding-right: 300px;
   font-size: 15,5px;
 }
 
-a {
+.dark-container a,
+.light-container1 a,
+.light-container2 a,
+.light-container3 a,
+.light-container4 a,
+.light-container5 a,
+.light-container6 a,
+.light-container7 a {
   text-decoration: none;
   border-style: solid;
   border-width: 0px;
@@ -179,4 +226,71 @@ a:hover {
   background-color: white;
   padding: 0px;
   margin: 0px;
+}
+
+.digital-ocean:hover,
+.digital-ocean p:hover,
+.cloudflare p:hover,
+.footer-content p>a:hover {
+  color: rgb(211, 211, 211);
+}
+
+.digital-ocean img {
+  width: 40px;
+  height: 40px;
+}
+
+.digital-ocean a,
+.cloudflare a {
+  text-decoration: none;
+  padding-top: 100px;
+  color: white;
+  margin-left: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.digital-ocean p,
+.cloudflare p {
+  margin-right: 50px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-style: inherit;
+  font-size: 2.5em;
+  line-height: 0;
+  margin-top: 100px;
+}
+
+.cloudflare img {
+  height: 40px;
+  width: 90px;
+}
+
+.footer-sponsors {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0px 0px 0px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: white;
 }
