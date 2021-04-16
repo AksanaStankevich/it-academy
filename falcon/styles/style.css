@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(220, 244, 252)
+}
 .wrapper {
     display: flex;
-    margin: 10px;
-    width: 20%;
+    margin-left: 150px;
+    width: 450px;
     position: relative;
     color: lightslategrey;
     text-align: left;
     height: 40px;
-    font-family: Roboto,helvetica,Arial,sans-serif;
+    font-family: Arial,sans-serif;
     font-weight: bolder;
 }
 
@@ -60,9 +63,9 @@ label {
 }
 
 .main-menu {
-    display: block;
     position: absolute;
-    width: 100%;
+    width: 700px;
+    display: block;
     bottom: 0px;
     left: 0px;
     transform: translateY(100%);
@@ -74,7 +77,7 @@ label {
 
 .main-menu a {
     display: block;
-    width: 100%;
+    width: 400px;
     padding: 10px;
     color: dimgrey;
     text-decoration: none;
@@ -87,7 +90,7 @@ label {
 .purchase {
     background-color: rgb(33, 150, 228);
     border-radius: 10px;
-    width: 10%;
+    width: 50%;
     color: white;
     height: 40px;
     font-family: Roboto,helvetica,Arial,sans-serif;
@@ -96,7 +99,7 @@ label {
 }
 
 #check-menu:checked ~ .main-menu {
-    max-height: 800px;
+    max-height: 1000px;
     font-size: 16px;
 }
 
@@ -106,21 +109,25 @@ label {
 }
 
 .container1 {
+    margin-top: 12px;
+    position: relative;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 30%;
 }
 
 .container2 {
     padding-left: 150px;
     position: relative;
-    width: 900px;
+    width: 60%;
+    margin-top: 12px;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .container2 input {
-    width: 100%;
+    width: 300px;
     height: 40px;
     margin-top: 8px;
     padding-left: 40px;
@@ -142,10 +149,64 @@ label {
 .container3 {
     display: flex;
     width: 100%;
-    padding-left: 60%;
-    margin-top: 8px;
+    padding-left: 35%;
+    margin-top: 12px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.container4 {
+    background-color: rgb(33, 150, 228);
+}
+
+.container4, 
+.container5 {
+    position: relative;
+    margin-left: 25%;
+    margin-top: 12px;
+    display: flex;
+    width: 1200px;
+    background-color: rgb(33, 150, 228);
+    border: 1px rgb(220, 244, 252) solid;
+    border-radius: 10px;
+}
+
+.container5 {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(66, 65, 65);
+}
+
+.container5 a {
+    color: rgb(33, 150, 228);
+    text-decoration: none;
+}
+
+.container5 a:hover {
+    text-decoration: underline;
+}
+
+.container5-bold {
+    font-weight: bold;
+}
+
+.container6 {
+    position: relative;
+    margin-left: 25%;
+    margin-top: 12px;
+    display: flex;
+    width: 1200px;
+}
+
+.container6-first {
+    background: white url(../images/pink.jpg);
+    background-position-x: 95%;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid rgb(220, 244, 252);
+    border-radius: 10px;
 }
 
 @keyframes spin {
@@ -195,4 +256,37 @@ label {
     border-radius: 100px;
 }
 
+.version {
+    background-color: rgb(187, 215, 233);
+    color: rgb(10, 12, 126);
+    font-size: 12px;
+}
+
+.schedule-header {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: white;
+}
+
+.schedule-darktext {
+    color: rgba(255, 255, 255, 0.647);
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.payments-field select {
+    position: absolute;
+    padding: 5px;
+    top: 20px;
+    right: 20px;
+    height: 35px;
+    background-color: white;
+    border: solid 1px rgb(33, 150, 228);
+    border-radius: 10px;
+    font-family: "SFMono-Regular","Liberation Mono", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(66, 65, 65);
 }
