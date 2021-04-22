@@ -19,6 +19,8 @@ body {
   display: flex;
   width: 100%;
   padding: 100px 0px;
+  justify-content: space-evenly;
+  flex-wrap: no-wrap;
 }
 
 .flex-header,
@@ -26,17 +28,13 @@ body {
 .light-container3,
 .light-container5,
 .light-container7 {
-  justify-content: space-evenly;
   flex-direction: row;
-  flex-wrap: no-wrap;
 }
 
 .light-container2,
 .light-container4,
 .light-container6 {
-  justify-content: space-evenly;
   flex-direction: row-reverse;
-  flex-wrap: no-wrap;
 }
 
 .main-header img {
@@ -78,8 +76,7 @@ body {
 .light-container3 img,
 .light-container4 img,
 .light-container5 img,
-.code1,
-.code2 {
+.code {
   border-style: solid;
   border-width: 0px;
   border-color: white;
@@ -94,8 +91,7 @@ body {
 .light-container3 img:hover,
 .light-container4 img:hover,
 .light-container5 img:hover,
-.code1:hover,
-.code2:hover {
+.code:hover {
   transform: scale(1.1);
 }
 
@@ -128,8 +124,7 @@ body {
   white-space: pre-wrap;
 }
 
-.code1,
-.code2 {
+.code {
   white-space: pre-wrap;
   font-size: 14px;
   font-family: "Liberation Mono", "Courier New", monospace;

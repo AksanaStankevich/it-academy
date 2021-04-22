@@ -1,12 +1,12 @@
 body {
     background-color: aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: tomato;
+    font-size: 2em;
+    color: rgb(235, 139, 123);
     list-style: inside;
-    text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: tomato;
+    color: rgb(235, 139, 123);
 }
