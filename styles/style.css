@@ -10,3 +10,7 @@ a {
     text-decoration: none;
     color: rgb(235, 139, 123);
 }
+
+ol {
+    list-style-type: none;
+}
