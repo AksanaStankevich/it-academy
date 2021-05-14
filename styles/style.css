@@ -1,16 +1,40 @@
 body {
-    background-color: aliceblue;
+    background-color: #60016D;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
-    color: rgb(235, 139, 123);
+    font-style: italic;
+    color: #72217D;
     list-style: inside;
+    display: flex;
+    padding-left: 5px;
+}
+
+ol {
+    color: #C561D3;
 }
 
 a {
     text-decoration: none;
-    color: rgb(235, 139, 123);
+    color: #C561D3;
 }
 
-ol {
-    list-style-type: none;
+ol li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    flex-direction: column;
+    background-color: #72217D;
+    border: 1px solid #C561D3;
+    box-shadow:0 0 0 32px transparent;
+    color: #C561D3;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding-right: 400px;
+}
+
+ol li:hover {
+    background-color: #5F2580;
+    margin-top: 5px;
+    transition: 0.5s;
+    font-size: 1em;
+    transform: scale(1, 1.3);
 }
