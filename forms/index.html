@@ -5,175 +5,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>English test</title>
 </head>
 
 <body>
-    <h1>English test</h1>
-    <p>So, here we are. Let's go and test your English level.</p>
-    <form action="#" method="get" autocomplete="on">
-        <fieldset>
-            <legend>Personality</legend>
-            <label for="first-name">First name:<br /></label><input type="text" id="first-name" placeholder="Your name"
-                required /><br />
-            <label for="last-name">Last name:<br /></label><input type="text" id="last-name" placeholder="Your surname"
-                required /><br />
-            <label for="gender">Choose your gender:<br /></label>
-            <select name="gender" id="gender" required>
-                <option value="0">Male</option>
-                <option value="female">Female</option>
-            </select> <br />
-            <label for="birth-date">Choose date of your birth </label><input type="date" name="birth-date"
-                id="birth-date" placeholder=" " required />
-        </fieldset>
-        <fieldset>
-            <legend>Contact information</legend>
-            <label for="country">Where are you from?</label><br /><input type="text" id="country"
-                placeholder="Enter your country" required /><br />
-            <label for="tel">Contact phone: </label><br /><input type="tel" name="tel" id="tel"
-                placeholder="+375(XX)XXX-XX-XX" required /><br />
-            <label for="e-mail">E-mail: </label><input type="e-mail" name="e-mail" id="e-mail"
-                placeholder="Enter your e-mail" required />
-        </fieldset>
-        <fieldset>
-            <legend>Common questions</legend>
-            <label for="level">What level of English do you currently have in your opinion?</label><br />
-            <input type="radio" name="level" id="level" />
-            <label for="level">A1-A2</label><br />
-            <input type="radio" name="level" id="level" />
-            <label for="level">B1</label><br />
-            <input type="radio" name="level" id="level" />
-            <label for="level">B2</label><br />
-            <input type="radio" name="level" id="level" />
-            <label for="level">C1</label><br />
-            <input type="radio" name="level" id="level" />
-            <label for="level">C2</label><br />
+    <header>
+        <h1>English test</h1>
+        <p>So, here we are. Let's go and test your English level.</p>
+    </header>
+    <main>
+        <form action="#" method="get" autocomplete="on">
+            <fieldset class="form">
+                <legend>Personality</legend>
+                <label for="first-name">First name:</label><input type="text" id="first-name" placeholder="Your name"
+                    required />
+                <label for="last-name">Last name:</label><input type="text" id="last-name" placeholder="Your surname"
+                    required />
+                <label for="gender">Choose your gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="0">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="birth-date">Choose date of your birth </label><input type="date" name="birth-date"
+                    id="birth-date" placeholder=" " required />
+            </fieldset>
+            <fieldset class="form">
+                <legend>Contact information</legend>
+                <label for="country">Where are you from?</label><input type="text" id="country"
+                    placeholder="Enter your country" required />
+                <label for="tel">Contact phone: </label><input type="tel" name="tel" id="tel"
+                    placeholder="+375(XX)XXX-XX-XX" required />
+                <label for="e-mail">E-mail: </label><input type="e-mail" name="e-mail" id="e-mail"
+                    placeholder="Enter your e-mail" required />
+            </fieldset>
+            <fieldset class="form">
+                <legend>Common questions</legend>
+                <p>What level of English do you currently have in your opinion?</p>
+                <div class="question"><input type="radio" name="level" id="level-a" />
+                    <label for="level-a">A1-A2</label>
+                </div>
+                <div class="question"><input type="radio" name="level" id="level-b" />
+                    <label for="level-b">B1</label>
+                </div>
+                <div class="question"><input type="radio" name="level" id="level-c" />
+                    <label for="level-c">B2</label>
+                </div>
+                <div class="question"><input type="radio" name="level" id="level-d" />
+                    <label for="level-d">C1</label>
+                </div>
+                <div class="question"><input type="radio" name="level" id="level-e" />
+                    <label for="level-e">C2</label>
+                </div>
+                <p>How old you?</p>
+                <div class="question"><input type="radio" name="age" id="age-a" />
+                    <label for="age-a">Less than 20 years old</label>
+                </div>
+                <div class="question"><input type="radio" name="age" id="age-b" />
+                    <label for="age-b">20-30 years old</label>
+                </div>
+                <div class="question"><input type="radio" name="age" id="age-c" />
+                    <label for="age-c">31-45 years old</label>
+                </div>
+                <div class="question"><input type="radio" name="age" id="age-d" />
+                    <label for="age-d">More than 45 years old</label>
+                </div>
 
-            <label for="age">How old you?</label><br />
-            <input type="radio" name="age" id="age" />
-            <label for="age">Less than 20 years old</label><br />
-            <input type="radio" name="age" id="age" />
-            <label for="age">20-30 years old</label><br />
-            <input type="radio" name="age" id="age" />
-            <label for="age">31-45 years old</label><br />
-            <input type="radio" name="age" id="age" />
-            <label for="age">More than 45 years old</label><br />
 
-            <label for="q11">Why have you decided to take this English test? </label><br />
-            <textarea name="reasons" id="reasons" cols="70" rows="10" placeholder="Tell about your reasons..."
-                required></textarea>
-        </fieldset>
+                <p>Why have you decided to take this English test? </p>
+                <textarea name="reasons" id="reasons" cols="70" rows="10" placeholder="Tell about your reasons..."
+                    required></textarea>
+            </fieldset>
 
-        <fieldset>
-            <legend>Let's start</legend>
-            <label for="1question">1. Everyone from our team wanted to drink ... John, he's sober for 15 years. *(1
-                point)</label><br />
-            <input type="radio" name="1question" id="1question" />
-            <label for="1question">A. unless</label><br />
-            <input type="radio" name="1question" id="1question" />
-            <label for="1question">B. however</label><br />
-            <input type="radio" name="1question" id="1question" />
-            <label for="1question">C. might</label><br />
-            <input type="radio" name="1question" id="1question" />
-            <label for="1question">D. except</label><br />
+            <fieldset class="form">
+                <legend>Let's start</legend>
+                <p> 1. Everyone from our team wanted to drink ... John, he's sober for 15 years. *(1
+                    point)</p>
+                    <div class="question"><input type="radio" name="firstQ" id="firstQ-a" />
+                <label for="firstQ-a">A. unless</label> </div>
+                <div class="question"><input type="radio" name="firstQ" id="firstQ-b" /><label for="firstQ-b">B.
+                    however</label> </div>
+                    <div class="question"><input type="radio" name="firstQ" id="firstQ-c" /><label for="firstQ-c">C.
+                    might</label> </div>
+                    <div class="question"><input type="radio" name="firstQ" id="firstQ-d" /><label for="firstQ-d">D.
+                    except</label> </div>
 
-            <label for="2question">2. I have ... information for you, it's urgent. I don't have ... information for you.
-                *(1 point)</label><br />
-            <input type="radio" name="2question" id="2question" />
-            <label for="1question">A. any, any</label><br />
-            <input type="radio" name="2question" id="2question" />
-            <label for="2question">B. any, some</label><br />
-            <input type="radio" name="2question" id="2question" />
-            <label for="1question">C. some, some</label><br />
-            <input type="radio" name="2question" id="2question" />
-            <label for="2question">D. some, any</label><br />
+                <p> 2. I have ... information for you, it's urgent. I don't have ... information for you.*(1 point)</p>
 
-            <label for="3question">3. You are ... than Tom Hardy! *(1 point)</label><br />
-            <input type="radio" name="3question" id="3question" />
-            <label for="3question">A. sweetest</label><br />
-            <input type="radio" name="3question" id="3question" />
-            <label for="3question">B. more sweatest</label><br />
-            <input type="radio" name="3question" id="3question" />
-            <label for="3question">C. sweater</label><br />
-            <input type="radio" name="3question" id="3question" />
-            <label for="3question">D. sweeter</label><br />
+                <div class="question"><input type="radio" name="secondQ" id="secondQ-a" />
+                    <label for="secondQ-a">A. any, any</label>
+                </div>
+                <div class="question"><input type="radio" name="secondQ" id="secondQ-b" />
+                    <label for="secondQ-b">B. any, some</label>
+                </div>
+                <div class="question"><input type="radio" name="secondQ" id="secondQ-c" />
+                    <label for="secondQ-c">C. some, some</label>
+                </div>
+                <div class="question"><input type="radio" name="secondQ" id="secondQ-d" />
+                    <label for="secondQ-d">D. some, any</label>
+                </div>
 
-            <label for="4question">4. Decide whether this statement is correct or not:'I'm looking forward to hearing
-                from you soon' *(1 point)</label><br />
-            <input type="radio" name="4question" id="4question" />
-            <label for="4question">A. Correct</label><br />
-            <input type="radio" name="4question" id="4question" />
-            <label for="4question">B. Incorrect</label><br />
+                <p>3. You are ... than Tom Hardy! *(1 point)</p>
+                <div class="question"><input type="radio" name="thirdQ" id="thirdQ-a" />
+                    <label for="thirdQ-a">A. sweetest</label>
+                </div>
+                <div class="question"><input type="radio" name="thirdQ" id="thirdQ-b" />
+                    <label for="thirdQ-b">B. more sweatest</label>
+                </div>
+                <div class="question"><input type="radio" name="thirdQ" id="thirdQ-c" />
+                    <label for="thirdQ-c">C. sweater</label>
+                </div>
+                <div class="question"><input type="radio" name="thirdQ" id="thirdQ-d" />
+                    <label for="thirdQ-d">D. sweeter</label>
+                </div>
 
-            <label for="5question">5. ... people know the difference between Process Builder
-                vs Apex Triggers. *(1 point)</label><br />
-            <input type="radio" name="5question" id="5question" />
-            <label for="5question">A. Little</label><br />
-            <input type="radio" name="5question" id="5question" />
-            <label for="5question">B. Few</label><br />
-            <input type="radio" name="5question" id="5question" />
-            <label for="5question">C. At least</label><br />
-            <input type="radio" name="5question" id="5question" />
-            <label for="5question">D. A little</label><br />
+                <p> 4. Decide whether this statement is correct or not:'I'm looking forward to hearing from you soon'
+                    *(1 point)</p>
+                <div class="question"><input type="radio" name="fourthQ" id="fourthQ-a" />
+                    <label for="fourthQ-a">A. Correct</label>
+                </div>
+                <div class="question"><input type="radio" name="fourthQ" id="fourthQ-b" />
+                    <label for="fourthQ-b">B. Incorrect</label>
+                </div>
 
-            <label for="6question">6. My fear of spiders ... from a bad experience I had. *(1 point)</label><br />
-            <input type="radio" name="6question" id="6question" />
-            <label for="6question">A. stems</label><br />
-            <input type="radio" name="6question" id="6question" />
-            <label for="6question">B. start</label><br />
-            <input type="radio" name="6question" id="6question" />
-            <label for="6question">C. leads</label><br />
-            <input type="radio" name="6question" id="6question" />
-            <label for="6question">D. going</label><br />
+                <p> 5. ... people know the difference between Process Builder vs Apex Triggers. *(1 point)</p>
+                <div class="question"><input type="radio" name="fivethQ" id="fivethQ-a" />
+                    <label for="fivethQ-a">A. Little</label>
+                </div>
+                <div class="question"><input type="radio" name="fivethQ" id="fivethQ-b" />
+                    <label for="fivethQ-b">B. Few</label>
+                </div>
+                <div class="question"><input type="radio" name="fivethQ" id="fivethQ-c" />
+                    <label for="fivethQ-c">C. At least</label>
+                </div>
+                <div class="question"><input type="radio" name="fivethQ" id="fivethQ-d" />
+                    <label for="fivethQ-d">D. A little</label>
+                </div>
 
-            <label for="7question">7. I'm so into your ... of humor, you don't even know! *(1 point)</label><br />
-            <input type="radio" name="7question" id="7question" />
-            <label for="7question">A. way</label><br />
-            <input type="radio" name="7question" id="7question" />
-            <label for="7question">B. impression</label><br />
-            <input type="radio" name="7question" id="7question" />
-            <label for="7question">C. sense</label><br />
-            <input type="radio" name="7question" id="7question" />
-            <label for="7question">D. manner</label><br />
+                <p> 6. My fear of spiders ... from a bad experience I had. *(1 point)</p>
+                <div class="question"><input type="radio" name="sixthQ" id="sixthQ-a" />
+                    <label for="sixthQ-a">A. stems</label>
+                </div>
+                <div class="question"><input type="radio" name="sixthQ" id="sixthQ-b" />
+                    <label for="sixthQ-b">B. start</label>
+                </div>
+                <div class="question"><input type="radio" name="sixthQ" id="sixthQ-c" />
+                    <label for="sixthQ-c">C. leads</label>
+                </div>
+                <div class="question"><input type="radio" name="sixthQ" id="sixthQ-d" />
+                    <label for="sixthQ-d">D. going</label>
+                </div>
 
-            <label for="8question">8. ... at his code, it's awful! *(1 point)</label><br />
-            <input type="radio" name="8question" id="8question" />
-            <label for="8question">A. Watch</label><br />
-            <input type="radio" name="8question" id="8question" />
-            <label for="8question">B. See</label><br />
-            <input type="radio" name="8question" id="8question" />
-            <label for="8question">C. Look</label><br />
-            <input type="radio" name="8question" id="8question" />
-            <label for="8question">D. Try</label><br />
+                <p> 7. I'm so into your ... of humor, you don't even know! *(1 point)</p>
+                <div class="question"><input type="radio" name="seventhQ" id="seventhQ-a" />
+                    <label for="seventhQ-a">A. way</label>
+                </div>
+                <div class="question"><input type="radio" name="seventhQ" id="seventhQ-b" />
+                    <label for="seventhQ-b">B. impression</label>
+                </div>
+                <div class="question"><input type="radio" name="seventhQ" id="seventhQ-c" />
+                    <label for="seventhQ-c">C. sense</label>
+                </div>
+                <div class="question"><input type="radio" name="seventhQ" id="seventhQ-d" />
+                    <label for="seventhQ-d">D. manner</label>
+                </div>
 
-            <label for="9question">9. I ... love pop music, but now I'm more of a wave cloud guy. *(1
-                point)</label><br />
-            <input type="radio" name="9question" id="9question" />
-            <label for="9question">A. use to</label><br />
-            <input type="radio" name="9question" id="9question" />
-            <label for="9question">B. don't use to</label><br />
-            <input type="radio" name="9question" id="9question" />
-            <label for="9question">C. used to</label><br />
-            <input type="radio" name="9question" id="9question" />
-            <label for="9question">D. am use to</label><br />
+                <p>8. ... at his code, it's awful! *(1 point)</p>
+                <div class="question"><input type="radio" name="eightQ" id="eightQ-a" />
+                    <label for="eightQ-a">A. Watch</label>
+                </div>
+                <div class="question"><input type="radio" name="eightQ" id="eightQ-b" />
+                    <label for="eightQ-b">B. See</label>
+                </div>
+                <div class="question"><input type="radio" name="eightQ" id="eightQ-c" />
+                    <label for="eightQ-c">C. Look</label>
+                </div>
+                <div class="question"><input type="radio" name="eightQ" id="eightQ-d" />
+                    <label for="eightQ-d">D. Try</label>
+                </div>
 
-            <label for="10question">10. This code ... by developers. *(1 point)</label><br />
-            <input type="radio" name="10question" id="10question" />
-            <label for="10question">A. A. was writing</label><br />
-            <input type="radio" name="10question" id="10question" />
-            <label for="10question">B. is written</label><br />
-            <input type="radio" name="10question" id="10question" />
-            <label for="10question">C. wrote</label><br />
-            <input type="radio" name="10question" id="10question" />
-            <label for="10question">D. had written</label><br />
-        </fieldset>
-        <input type="checkbox" name="agreement1" id="agreement1" />
-        <label for="agreement1" required>I agree to participate in the research and processing of personal
-            data</label> <br />
-        <input type="checkbox" name="agreement2" id="agreement2" />
-        <label for="agreement2" required>I want to get the results by e-mail</label> <br />
-        <input type="submit" value="Sent" />
-    </form>
+                <p>9. I ... love pop music, but now I'm more of a wave cloud guy. *(1
+                    point)</p>
+                <div class="question"><input type="radio" name="ninethQ" id="ninethQ-a" />
+                    <label for="ninethQ-a">A. use to</label>
+                </div>
+                <div class="question"><input type="radio" name="9question" id="ninethQ-b" />
+                    <label for="ninethQ-b">B. don't use to</label>
+                </div>
+                <div class="question"><input type="radio" name="9question" id="ninethQ-c" />
+                    <label for="ninethQ-c">C. used to</label>
+                </div>
+                <div class="question"><input type="radio" name="9question" id="ninethQ-d" />
+                    <label for="ninethQ-d">D. am use to</label>
+                </div>
+
+                <p>10. This code ... by developers. *(1 point)</p>
+                <div class="question"><input type="radio" name="tenthQ" id="tenthQ-a" />
+                    <label for="tenthQ-a">A. A. was writing</label>
+                </div>
+                <div class="question"><input type="radio" name="tenthQ" id="tenthQ-b" />
+                    <label for="tenthQ-b">B. is written</label>
+                </div>
+                <div class="question"><input type="radio" name="tenthQ" id="tenthQ-c" />
+                    <label for="tenthQ-c">C. wrote</label>
+                </div>
+                <div class="question"><input type="radio" name="tenthQ" id="tenthQ-d" />
+                    <label for="tenthQ-d">D. had written</label>
+                </div>
+            </fieldset>
+            <div class="question"><input type="checkbox" name="agreement" id="agreement1" />
+                <label for="agreement1" required>I agree to participate in the research and processing of personal
+                    data</label>
+            </div>
+            <div class="question"><input type="checkbox" name="agreement" id="agreement2" />
+                <label for="agreement2" required>I want to get the results by e-mail</label>
+            </div>
+            <input type="submit" value="Sent" />
+
+        </form>
+    </main>
 </body>
 
 </html>
