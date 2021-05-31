@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/order.css">
+    <title>Замовіць тур</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo-icon.png" alt="logotip">
+                <h1> Trip-hata</h1>
+            </a>
+            <ul class="menu-ul">
+                <li class="menu-li">
+                    <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                </li>
+                <li class="menu-li">
+                    <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць тур</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#"> <img src="./images/blog-icon.png" alt="Icon blog"> Блог</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
+                </li>
+                <li class="menu-li">
+                    <a href="#"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="order-tour">
+        <div class="container">
+            <h1 class="order-title">Замовіць тур</h1>
+        </div>
+        <div class="container">
+            <form class="order-form" action="#" method="get" autocomplete="on">
+                <fieldset class="form">
+                    <legend class="order-form-legend">Асабістыя дадзеныя</legend>
+                    <div class="form-field">
+                        <label for="first-name">Імя:</label>
+                        <input type="text" id="first-name" class="form-field__input" placeholder="Ваша імя" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Прозвішча:</label>
+                        <input type="text" id="last-name" class="form-field__input" placeholder="Ваша прозвішча" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Імя па бацьку:</label>
+                        <input type="text" id="last-name" class="form-field__input" placeholder="Ваша імя па бацьку" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Кантактны тэлефон: </label>
+                        <input type="tel" name="tel" id="tel" class="form-field__input" placeholder="+375(XX)XXX-XX-XX" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="e-mail">Электронная скрыня: </label>
+                        <input type="e-mail" name="e-mail" id="e-mail" class="form-field__input" placeholder="Ваша электронная пошта" required />
+                    </div>
+                </fieldset>
+                <fieldset class="form">
+                    <legend class="order-form-legend">Звесткі пра тур</legend>
+                    <div class="form-field">
+                        <label for="city">Горад адлёту:</label>
+                        <select name="city" id="city" class="form-field__input" required>
+                            <option value="minsk">Мінск</option>
+                            <option value="grodno">Гродна</option>
+                            <option value="kiev">Кіеў</option>
+                            <option value="moscow">Масква</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="direction">Накірунак:</label>
+                        <select name="direction" id="direction" class="form-field__input" required>
+                            <option value="france">Францыя</option>
+                            <option value="japan">Японія</option>
+                            <option value="latvia">Латвія</option>
+                            <option value="germany">Германія</option>
+                            <option value="spanish">Гішпанія</option>
+                            <option value="netherland">Галандыя</option>
+                            <option value="englang">Англія</option>
+                            <option value="poland">Польшча</option>
+                            <option value="mir">Мірскі замак</option>
+                            <option value="norway">Нарвегія</option>
+                            <option value="usa">ЗША</option>
+                            <option value="argentina">Аргентына</option>
+                            <option value="turkey">Турцыя</option>
+                            <option value="egypt">Егіпет</option>
+                            <option value="maldivy">Мальдывы</option>
+                            <option value="bali">Балі</option>
+                            <option value="praga">Прага</option>
+                            <option value="china">Кітай</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="flying-first-date">Дата адлёту</label>
+                        <input type="date" name="flying-first-date" id="flying-first-date" class="form-field__input" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="flying-last-date">Дата вяртання </label>
+                        <input type="date" name="flying-last-date" id="flying-last-date" class="form-field__input" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="people-number">Колькасць турыстаў</label>
+                        <input type="number" name="people-number" id="people-number" class="form-field__input" required />
+                    </div>
+                </fieldset>
+                <div class="form-button-block">
+                    <input type="submit" name="search" id="search-btn" class="primary-button primary-button__margin-none" value="Знайсці" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-menu">
+                <ul class="menu-ul menu-ul__vertical">
+                    <li class="menu-li">
+                        <a href="#"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="#"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць тур</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="#"> <img src="./images/blog-icon.png" alt="Icon blog"> Блог</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="#"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="#"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a href="./index.html" class="logo footer-logo__width-full">
+                    <img src="./images/logo-icon.png" alt="logotip">
+                    <h1> Trip-hata</h1>
+                </a>
+            </div>
+            <div class="footer-social">
+                <div class="social-list">
+                    <a href="#" class="social-item">
+                        <img class="social-image" src="./images/facebook.png">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img class="social-image" src="./images/twitter.png">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img class="social-image" src="./images/vkontakte.png">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img class="social-image" src="./images/youtube.png">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img class="social-image" src="./images/instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

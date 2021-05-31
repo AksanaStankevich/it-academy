@@ -1,0 +1,117 @@
+/************** HEADER ******************/
+
+.header {
+    /* position:fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: rgba(255,255,255, 1);
+    z-index: 1000;
+    border-bottom: 3px solid #ccc;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    width: calc(100% / 12 * 4 - 15px * 2);
+    margin: 0 15px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+}
+
+.logo img {
+    max-height: 100%;
+}
+
+.logo h1 {
+    margin-left: 5px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000c22;
+    white-space: nowrap;
+}
+
+.logo p {
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+}
+
+/************** MENU ******************/
+
+.menu-ul {
+	display:flex;
+	justify-content: flex-end;
+	padding: 0;
+    width: calc(100% / 12 * 8 - 15px * 2);
+    margin: 0 15px;
+}
+
+.menu-li {
+	list-style: none;
+    white-space: nowrap;
+    padding: 0 25px;
+}
+
+.menu-li:last-child {
+    padding-right: 0;
+}
+
+.menu-li a {
+    padding-bottom: 5px;
+	text-decoration: none;
+    text-transform: uppercase;
+	font-size: 20px;
+    font-weight: bolder;
+	color: #000c22;
+	position: relative;
+}
+
+.menu-li a img {
+    width: 18px;
+    height: 18px;
+}
+
+.menu-li a::before, .menu-li a::after {
+    opacity: 0;
+	content: '';
+	width: 20px;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	transition: .5s;
+	mix-blend-mode: multiply;
+}
+
+.menu-li a::before {
+    background-color: #1e81bb;
+	left: 0;
+}
+
+.menu-li a::after {
+	background-color: #fc6c38;
+	right: 0;
+}
+
+.menu-li:hover a::before {
+	opacity: 1;
+    width: 50%;
+	transform: translateX(100%);
+}
+
+.menu-li:hover a::after {
+	opacity: 1;
+	width: 50%;
+	transform: translateX(-100%);
+}
+
+.menu-li a:hover {
+	color: #1e81bb;
+}
