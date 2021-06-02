@@ -1,7 +1,9 @@
+@import './../components/colors.css';
+
 /************** FOOTER ******************/
 
 .footer {
-    border-top: 3px solid #ccc;
+    border-top: 3px solid var(--light-grey);
     padding: 50px 0;
 }
 

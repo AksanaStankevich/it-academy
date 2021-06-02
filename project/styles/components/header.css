@@ -1,3 +1,5 @@
+@import './../components/colors.css';
+
 /************** HEADER ******************/
 
 .header {
@@ -5,9 +7,9 @@
     right: 0;
     left: 0;
     padding: 20px 0;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--white);
     z-index: 1000;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 3px solid var(--light-grey);;
 }
 
 .navigation {
@@ -42,7 +44,7 @@
 .logo p {
     font-style: italic;
     font-size: 18px;
-    color: #fff;
+    color: var(--white);
 }
 
 /************** MENU ******************/
@@ -60,7 +62,7 @@
 }
 
 .navigation .menu-icon .navicon {
-    background: #333;
+    background: var(--dark);
     display: block;
     height: 2px;
     position: relative;
@@ -70,7 +72,7 @@
 
 .navigation .menu-icon .navicon:before,
 .navigation .menu-icon .navicon:after {
-    background: #333;
+    background: var(--dark);
     content: '';
     display: block;
     height: 100%;
@@ -122,7 +124,6 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bolder;
-    color: #000c22;
     position: relative;
 }
 
@@ -144,12 +145,12 @@
 }
 
 .menu-li a::before {
-    background-color: #1e81bb;
+    background-color: var(--blue);
     left: 0;
 }
 
 .menu-li a::after {
-    background-color: #fc6c38;
+    background-color: var(--orange);
     right: 0;
 }
 
@@ -166,7 +167,7 @@
 }
 
 .menu-li a:hover {
-    color: #1e81bb;
+    color: var(--blue);
 }
 
 @media screen and (max-width: 1200px) {
@@ -202,7 +203,7 @@
         top: 100px;
         right: 0;
         width: 50%;
-        background: #fff;
+        background: var(--white);
         z-index: 100;
         margin: 0;
     }
