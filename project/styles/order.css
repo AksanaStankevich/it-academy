@@ -54,3 +54,13 @@
     font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+    .form {
+        width: calc(100% / 12 * 12 - 15px * 2);
+        margin: 0 15px;
+    }
+    .form-button-block {
+        width: calc(100% / 12 * 12 - 15px * 2);
+        margin: 0 15px;
+    }
+}

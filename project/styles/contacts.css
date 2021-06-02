@@ -8,16 +8,23 @@
 }
 
 .workers {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    padding: 30px 10%;
+    padding: 50px 10%;
 }
 
-.workers-photo img{
+.workers-photo {
+    width: calc(100% / 12 * 2 - 15px * 2);
+    margin: 0 15px;
+    text-align: center;
+}
+
+.workers-photo img {
     width: 50%;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+.workers-photo:hover img {
+    transform: scale(1.2);
 }
 
 .mapouter {
@@ -38,29 +45,34 @@
     height: 400px !important;
 }
 
+.feedback-write-title {
+    width: calc(100% / 12 * 12 - 15px * 2);
+    margin: 0 15px;
+}
+
 .information {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    padding: 50px 0;
 }
 
 .contact-information {
-    padding: 20px 0;
+    width: calc(100% / 12 * 3 - 15px * 2);
+    margin: 0 15px;
     line-height: 2em;
 }
 
 .feedback {
+    width: calc(100% / 12 * 9 - 15px * 2);
+    margin: 0 15px;
     display: flex;
-    padding: 20px 0;
     line-height: 2em;
 }
 
 .feedback-form {
     display: flex;
-}
-
-.form {
-    margin: 0 15px;
+    flex-wrap: wrap;
 }
 
 .form-field {
@@ -69,21 +81,77 @@
     font-size: 18px;
 }
 
-.form-field input {
-    height: 2.5em;
+.form-field:last-child {
+    padding: 0
+}
+
+.form-field__input {
+    min-height: 42px;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.form-field__checkbox {
+    transform: scale(2);
+    margin: 0 9px;
+}
+
+.form-button-block {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
 }
 
 .form-question {
     padding: 20px 0 0 10px;
 }
 
-.sent-information {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+.contact-information-fields {
+    width: calc(100% / 12 * 3 - 15px * 2);
+    margin: 0 15px;
+}
+.feedback-information-fields {
+    width: calc(100% / 12 * 9 - 15px * 2);
+    margin: 0 15px;
 }
 
-.primary-button {
-    width: 52%;
-    margin: 0 9% 10px 0;
+.feedback-information-fields textarea {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .workers-photo {
+        width: calc(100% / 12 * 4 - 15px * 2);
+    }
+    .contact-information {
+        width: calc(100% / 12 * 6 - 15px * 2);
+    }
+
+    .feedback {
+        width: calc(100% / 12 * 6 - 15px * 2);
+    }
+
+    .contact-information-fields {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
+
+    .feedback-information-fields {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .workers-photo {
+        width: calc(100% / 12 * 6 - 15px * 2);
+    }
+    .contact-information {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
+
+    .feedback {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
 }

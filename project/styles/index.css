@@ -182,7 +182,7 @@
 .form {
     width: 100%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .form-field {
@@ -194,7 +194,7 @@
 }
 
 .form-field:last-child {
-    padding: 0
+    padding: 0;
 }
 
 .form-field__input {
@@ -209,7 +209,7 @@
 #search-btn {
     display: block;
     height: 100%;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 /************** TOURS ******************/
@@ -291,4 +291,73 @@
 
 .more-tours-container {
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-field {
+        width: calc(100% / 12 * 4 - 15px * 2);
+        margin: 0 15px 10px;
+    }
+
+    #search-btn {
+        height: auto;
+        margin-top: auto;
+    }
+
+    .figure {
+        width: calc(100% / 12 * 6 - 15px * 2);
+        margin-bottom: 15px;
+    }
+
+    .slideText {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .tours-item {
+        width: calc(100% / 12 * 6 - 15px * 2);
+    }
+
+    .more-tours-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tours-item {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
+
+    .more-tours-container .primary-button {
+        width: 100%;
+    }
+
+    .form-field {
+        width: calc(100% / 12 * 12 - 15px * 2);
+        margin: 0 15px 10px;
+    }
+
+    .form-field:last-child {
+        display: contents;
+    }
+
+    #search-btn {
+        height: auto;
+        margin-top: auto;
+    }
+
+    .figure {
+        width: calc(100% / 12 * 12 - 15px * 2);
+    }
+
+    .slideText {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slideText {
+        width: 90%;
+    }
 }

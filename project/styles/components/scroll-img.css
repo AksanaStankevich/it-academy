@@ -26,3 +26,17 @@
     bottom: 0;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 992px) {
+    .scroll-img {
+        height: auto;
+    }
+
+    .page-title {
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

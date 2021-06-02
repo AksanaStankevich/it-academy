@@ -1,0 +1,111 @@
+@import './components/general.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/scroll-img.css';
+
+.scroll-img {
+    background-image: url(./../images/scroll-img2.jpg);
+}
+
+.reviews-description {
+    padding: 50px 0;
+}
+
+.reviews-text {
+    width: calc(100% / 12 * 8 - 15px * 2);
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.reviews-list {
+    width: calc(100% / 12 * 5 - 15px * 2);
+    margin: 0 15px;
+    margin-left: calc(100% / 12 * 1 + 15px);
+}
+
+.reviews-image {
+    width: calc(100% / 12 * 6 - 15px * 2);
+    margin: 0 15px;
+    background: url(./../images/reviews-bg.jpg), linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(0,212,255,0) 70%);
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+.reviews-item {
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 3px solid #ccc;
+}
+
+.reviews-item:first-child {
+    padding: 0;
+}
+
+.reviews-item:last-child {
+    border-bottom: none;
+}
+
+.reviews-item-icon {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+.reviews-item-icon img {
+    width: 80%;
+}
+
+.reviews-item-content {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reviews-item-text {
+    margin-bottom: 20px;
+}
+
+.reviews-item-author {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews-image {
+       display: none;
+   }
+
+   .reviews-list {
+       width: calc(100% / 12 * 8 - 15px * 2);
+       margin-left: calc(100% / 12 * 2 + 15px);
+   }
+
+   .reviews-text {
+       margin-left: calc(100% / 12 * 2 + 15px);
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews-list {
+        width: calc(100% / 12 * 12 - 15px * 2);
+        margin: 0 15px;
+    }
+
+    .reviews-text {
+        width: calc(100% / 12 * 12 - 15px * 2);
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .scroll-img {
+        background-image: none;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .reviews-item-icon {
+        display: none;
+    }
+}

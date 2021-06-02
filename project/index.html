@@ -11,29 +11,31 @@
 
 <body>
     <header class="header">
-        <div class="container header-container">
-            <a href="./index.html" class="logo">
-                <img src="./images/logo-icon.png" alt="logotip">
-                <h1> Trip-hata</h1>
-            </a>
-            <ul class="menu-ul">
-                <li class="menu-li">
-                    <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
-                </li>
-                <li class="menu-li">
-                    <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
-                        тур</a>
-                </li>
-                <li class="menu-li">
-                    <a href="./blog.html"> <img src="./images/blog-icon.png" alt="Icon blog"> Блог</a>
-                </li>
-                <li class="menu-li">
-                    <a href="./reviews.html"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
-                </li>
-                <li class="menu-li">
-                    <a href="./contacts.html"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="navigation">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo-icon.png" alt="logotip">
+                    <h1> Trip-hata</h1>
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+                <ul class="menu-ul">
+                    <li class="menu-li">
+                        <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
+                            тур</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./reviews.html"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./contacts.html"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="slider">
@@ -181,22 +183,18 @@
                     </div>
                     <div class="form-field">
                         <label for="flying-first-date">Дата адлёту</label>
-                        <input type="date" name="flying-first-date" id="flying-first-date" class="form-field__input"
-                            required />
+                        <input type="date" name="flying-first-date" id="flying-first-date" class="form-field__input" required />
                     </div>
                     <div class="form-field">
                         <label for="flying-last-date">Дата вяртання </label>
-                        <input type="date" name="flying-last-date" id="flying-last-date" class="form-field__input"
-                            required />
+                        <input type="date" name="flying-last-date" id="flying-last-date" class="form-field__input" required />
                     </div>
                     <div class="form-field">
                         <label for="people-number">Колькасць турыстаў</label>
-                        <input type="number" name="people-number" id="people-number" class="form-field__input"
-                            required />
+                        <input type="number" name="people-number" id="people-number" class="form-field__input" required />
                     </div>
                     <div class="form-field">
-                        <input type="submit" name="search" id="search-btn" class="primary-button form-field__input"
-                            value="Знайсці" />
+                        <input type="submit" name="search" id="search-btn" class="primary-button form-field__input" value="Знайсці" />
                     </div>
                 </fieldset>
             </form>
@@ -486,22 +484,19 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-menu">
-                <ul class="menu-ul menu-ul__vertical">
+                <ul class="menu-ul__vertical">
                     <li class="menu-li">
-                        <a href="#"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                        <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
                     </li>
                     <li class="menu-li">
-                        <a href="#"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
+                        <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
                             тур</a>
                     </li>
                     <li class="menu-li">
-                        <a href="#"> <img src="./images/blog-icon.png" alt="Icon blog"> Блог</a>
+                        <a href="./reviews.html"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
                     </li>
                     <li class="menu-li">
-                        <a href="#"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                        <a href="./contacts.html"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
                     </li>
                 </ul>
             </div>
@@ -513,19 +508,19 @@
             </div>
             <div class="footer-social">
                 <div class="social-list">
-                    <a href="#" class="social-item">
+                    <a href="https://www.facebook.com/" class="social-item">
                         <img class="social-image" src="./images/facebook.png">
                     </a>
-                    <a href="#" class="social-item">
+                    <a href="https://twitter.com/" class="social-item">
                         <img class="social-image" src="./images/twitter.png">
                     </a>
-                    <a href="#" class="social-item">
+                    <a href="https://vk.com/" class="social-item">
                         <img class="social-image" src="./images/vkontakte.png">
                     </a>
-                    <a href="#" class="social-item">
+                    <a href="https://www.youtube.com/" class="social-item">
                         <img class="social-image" src="./images/youtube.png">
                     </a>
-                    <a href="#" class="social-item">
+                    <a href="https://www.instagram.com/" class="social-item">
                         <img class="social-image" src="./images/instagram.png">
                     </a>
                 </div>
